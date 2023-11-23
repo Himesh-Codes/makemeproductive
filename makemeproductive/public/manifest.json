@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Make Me Productive",
+    "version": "0.0.1",
+    "description": "A scheduler + notification extension that will help user to get reminder in syste, based on schedule",
+    "options_page": "options.html",
+    "action": {
+        "default_title": "Scheduler navbar and calendar.",
+        "default_popup": "popup.html"
+    }
+}
