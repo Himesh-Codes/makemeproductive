@@ -1,0 +1,94 @@
+.navGroup {
+    height: 100%;
+    width: 100%;
+    padding: 5px 5px;
+}
+
+nav:first-child {
+    height: 15%;
+    width: 100%;
+}
+
+.navGroup li {
+    width: 100%;
+    margin: auto;
+    list-style-type: none;
+}
+
+.slidingMenu {
+    width: 250px;
+    height: 40px;
+    margin: auto;
+    padding: 15px;
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+.viewmode,
+.editmode {
+    position: relative;
+    display: inline-block;
+    padding: 15px 20px;
+    line-height: 20px;
+    /* adjusted width according to padding, inspect over hover padding */
+    width: 30%;
+    text-decoration: none;
+    z-index: 1;
+}
+.viewmode:hover,
+.editmode:hover{
+    color: #fff;
+}
+
+.viewmode {
+    float: left;
+    color: #fff;
+}
+
+.editmode {
+    float: right;
+    color: #ffffff8f;
+}
+
+/* this component plays the transition of background color on hover / click */
+.background {
+    position: absolute;
+    left: 1em;
+    top: 1.3em;
+    z-index: -1;
+    padding: 20px 15px;
+    border-radius: 25px;
+    background-color: rgb(5, 182, 5);
+    width: 30%;
+    /* add transition effect on hover */
+    transition: all 0.7s ease-in-out;
+}
+
+/* hover or click active edit then we move the background left pos, changing properties of sibling elements using " ~ "
+Note: You can make a sibling that follows an element change when that element is hovered*/
+.editmode:focus~.background {
+    left: 10em;
+    background-color: rgb(233, 156, 13);
+}
+
+.editmode:focus {
+    color: #fff;
+}
+
+.viewmode:focus~.background {
+    left: 1em;
+    background-color: rgb(5, 182, 5);
+}
+
+.viewmode:focus {
+    color: #fff;
+}
+
+.editmode:focus~.viewmode {
+    color: #ffffff8f;
+}
+
+.viewmode:focus~.editmode {
+    color: #ffffff8f;
+}

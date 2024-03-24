@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+.viewcontent > * {
+    margin: 15px 0px;
+}
+
+.taskSubject {
+    font-family: 'Lobster', serif;
+    font-size: 40px;
+    color: #f3db05;
+}
+
+.clock{
+    color: #fff;
+}
