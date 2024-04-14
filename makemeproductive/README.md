@@ -45,3 +45,10 @@ If you are developing a production application, we recommend updating the config
 
 - Reference: https://dribbble.com/tags/navigation-bar
 - 1. https://dribbble.com/shots/16050208-Sidebar-Navigation-Exploration
+
+## Features Technical Concept Elaborated
+
+- Menu: Sliding menu concept using css `transition` property.
+- Hide and Unhide View/Edit content: Used the react state property added in App.tsx parent, passed to child as props. With using best practices like Interface for prop content.
+- View: Created one component for the Clock for timebox content, contains task name, countdown timer, date-time of from & to for the timebox.
+- Edit: New component,
